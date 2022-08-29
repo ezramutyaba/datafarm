@@ -6,4 +6,5 @@ print(mylist2)
 
 for i in mylist:
     print(i)
+    print(i)
     
