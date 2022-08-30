@@ -1,8 +1,8 @@
-mylist=["banana","cherry","apple"]
-print(mylist)
+from fastapi import FastAPI
 
-mylist2 = list()
-print(mylist2)
+app = FastAPI()
 
-for i in mylist:
-    print(i)
+
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
