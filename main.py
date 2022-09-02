@@ -20,5 +20,4 @@ def get_posts():
 
 @app.post("/createposts")
 def create_posts(post:Post):
-    print(post.rating)
-    return {"data":post.dict()}
+    return {"data":post}
