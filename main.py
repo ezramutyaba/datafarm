@@ -19,5 +19,5 @@ def get_posts():
     return {"data":"This is your post"}
 
 @app.post("/createposts")
-def create_posts(post:Post):
-    return {"data":post}
+def create_posts():
+    return {"data":"nothimg"}
